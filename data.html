@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBSYS | Data Peminjaman</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <div class="logo">
+                📚 LIBSYS
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Form Peminjaman
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="data.html" class="active">
+                            Data Peminjaman
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Judul -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>Data Peminjaman Buku</h1>
+
+            <p>
+                Daftar seluruh data peminjaman buku perpustakaan.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Isi -->
+
+    <section class="container">
+
+        <div class="card">
+
+            <div class="table-header">
+
+                <h2>Daftar Peminjaman</h2>
+
+                <button
+                    id="hapusSemua"
+                    class="btn-danger">
+
+                    Hapus Semua
+
+                </button>
+
+            </div>
+
+
+            <div class="table-responsive">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>No</th>
+
+                            <th>Nama</th>
+
+                            <th>NIM</th>
+
+                            <th>Judul Buku</th>
+
+                            <th>Kategori</th>
+
+                            <th>Tanggal</th>
+
+                            <th>Keterangan</th>
+
+                            <th>Aksi</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tableBody">
+
+                        <!-- Diisi JavaScript -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div id="kosong" class="empty-data">
+
+                <h3>📖 Belum Ada Data</h3>
+
+                <p>
+                    Silakan tambahkan data peminjaman buku terlebih dahulu.
+                </p>
+
+                <a href="index.html" class="btn-primary">
+                    Tambah Data
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 LIBSYS | Library Management System
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,493 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#eef5f2;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:#2d6a4f;
+    color:#fff;
+    padding:18px 0;
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+}
+
+.nav-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:8px 15px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:white;
+    color:#2d6a4f;
+}
+
+.active{
+    background:white;
+    color:#2d6a4f;
+    font-weight:600;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:40px;
+    color:#2d6a4f;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#666;
+    font-size:18px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:40px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:25px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+    padding:13px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#2d6a4f;
+
+    outline:none;
+
+    box-shadow:0 0 5px rgba(45,106,79,.4);
+
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button-group{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.btn-primary{
+
+    background:#2d6a4f;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#1b4332;
+
+}
+
+.btn-secondary{
+
+    background:#adb5bd;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:#6c757d;
+
+}
+
+.btn-danger{
+
+    background:#d62828;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-danger:hover{
+
+    background:#b00020;
+
+}
+
+/* tombol edit */
+
+.btn-edit{
+
+    background:#40916c;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-right:8px;
+
+    transition:.3s;
+
+}
+
+.btn-edit:hover{
+
+    background:#2d6a4f;
+
+}
+
+/* tombol hapus */
+
+.btn-delete{
+
+    background:#d62828;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-delete:hover{
+
+    background:#b00020;
+
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.error{
+
+    color:red;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.table-responsive{
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+table th{
+
+    background:#2d6a4f;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+table tr:nth-child(even){
+
+    background:#f8f9fa;
+
+}
+
+table tr:hover{
+
+    background:#d8f3dc;
+
+}
+
+/* =========================
+   EMPTY DATA
+========================= */
+
+.empty-data{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    display:none;
+
+}
+
+.empty-data h3{
+
+    color:#2d6a4f;
+
+    margin-bottom:10px;
+
+}
+
+.empty-data p{
+
+    margin-bottom:25px;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:#2d6a4f;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.nav-content{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.button-group{
+
+    flex-direction:column;
+
+}
+
+.table-header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    align-items:flex-start;
+
+}
+
+.card{
+
+    padding:20px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.hero{
+
+    padding:40px 10px;
+
+}
+
+.hero h1{
+
+    font-size:25px;
+
+}
+
+.logo{
+
+    font-size:22px;
+
+}
+
+table{
+
+    font-size:14px;
+
+}
+
+}
