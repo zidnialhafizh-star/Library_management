@@ -394,6 +394,10 @@ table tr:hover{
 
 }
 
+.btn-edit{
+    margin-right:8px;
+}
+
 /* =========================
    FOOTER
 ========================= */

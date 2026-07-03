@@ -176,51 +176,72 @@ function tampilkanData() {
 
     data.forEach(function (item, index) {
 
-        tableBody.innerHTML += `
+        const tr = document.createElement("tr");
 
-        <tr>
+        const tdNo = document.createElement("td");
+        tdNo.textContent = index + 1;
 
-            <td>${index + 1}</td>
+        const tdNama = document.createElement("td");
+        tdNama.textContent = item.nama;
 
-            <td>${item.nama}</td>
+        const tdNim = document.createElement("td");
+        tdNim.textContent = item.nim;
 
-            <td>${item.nim}</td>
+        const tdBuku = document.createElement("td");
+        tdBuku.textContent = item.buku;
 
-            <td>${item.buku}</td>
+        const tdKategori = document.createElement("td");
+        tdKategori.textContent = item.kategori;
 
-            <td>${item.kategori}</td>
+        const tdTanggal = document.createElement("td");
+        tdTanggal.textContent = item.tanggal;
 
-            <td>${item.tanggal}</td>
+        const tdKet = document.createElement("td");
+        tdKet.textContent = item.keterangan;
 
-            <td>${item.keterangan}</td>
+        const tdAksi = document.createElement("td");
+        tdAksi.style.display = "flex";
+        tdAksi.style.gap = "8px";
+        tdAksi.style.alignItems = "center";
 
-            <td>
+        // Tombol Edit
+        const btnEdit = document.createElement("button");
+        btnEdit.textContent = "Edit";
+        btnEdit.classList.add("btn-edit");
+        btnEdit.style.marginRight = "8px";
 
-                <button
-                    class="btn-edit"
-                    onclick="editData(${index})">
+        btnEdit.addEventListener("click", function () {
+            editData(index);
+        });
 
-                    Edit
+        // Tombol Hapus
+        const btnDelete = document.createElement("button");
+        btnDelete.textContent = "Hapus";
+        btnDelete.classList.add("btn-delete");
 
-                </button>
+        btnDelete.addEventListener("click", function () {
+            hapusData(index);
+        });
 
-                <button
-                    class="btn-delete"
-                    onclick="hapusData(${index})">
+        // Masukkan tombol ke kolom aksi
+        tdAksi.appendChild(btnEdit);
+        tdAksi.appendChild(btnDelete);
 
-                    Hapus
+        tr.appendChild(tdNo);
+        tr.appendChild(tdNama);
+        tr.appendChild(tdNim);
+        tr.appendChild(tdBuku);
+        tr.appendChild(tdKategori);
+        tr.appendChild(tdTanggal);
+        tr.appendChild(tdKet);
+        tr.appendChild(tdAksi);
 
-                </button>
-
-            </td>
-
-        </tr>
-
-        `;
+        tableBody.appendChild(tr);
 
     });
 
 }
+
 
 // ==============================
 // EDIT
